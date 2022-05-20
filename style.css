@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+a:link {
+  text-decoration: none;
+  color: black;
+  transition: background-image 0.5s ease;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: wavy;
+  color: whitesmoke;
+  background-image: linear-gradient(to right, #456fe8 , #19b0ec);
+}
+
+a:active {
+  text-decoration: wavy;
+  color: white;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #456fe8 , #19b0ec);
+}
+.wrapper{
+    background: white;
+    padding: 30px;
+    border-radius: 7px;
+    width:450px;
+}
+.wrapper header h1{
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+}
+.wrapper header p{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+}
+form{
+    margin: 20px 0 27px; 
+}
+form input{
+    width: 100%;
+    height: 60px;
+    outline: none;
+    font-size: 19px;
+    padding: 0 17px;
+    border-radius: 5px;
+    border: 1px solid #b3b2b2;
+}
+form input:focus{
+    padding: 0 10px;
+    border: 2px solid #456fe8;
+}
+form button{
+    opacity: 0.7;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 17px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #456fe8 , #19b0ec);
+    pointer-events: none;
+}
+form input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
